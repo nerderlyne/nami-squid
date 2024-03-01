@@ -1,0 +1,9 @@
+type Registered @entity {
+  id: ID!
+  node: String! 
+  subnode: String
+  owner: String! @index
+  txHash: String! 
+  blockTimestamp: BigInt! @index
+}
+
